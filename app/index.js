@@ -1,13 +1,20 @@
+
+const React = require('react');
+const ReactDOM = require('react-dom');
+const routes = require('./config/routes');
+
+
+
+ReactDOM.render(
+  routes,
+  document.getElementById('app')
+);
+
 // const USER_DATA = {
 //   name: 'Carlos Martinez',
 //   username: 'ceejaymar',
 //   image: 'https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAg5AAAAJGZkY2I1NTk5LTEyYjktNGJhNC04ODg0LTcxNjg3NzllMzhiMQ.jpg'
 // }
-
-const React = require('react');
-const ReactDOM = require('react-dom');
-
-const routes = require('./config/routes');
 
 // const ProfilePic = React.createClass({
 //   render: function(){
@@ -66,8 +73,3 @@ const routes = require('./config/routes');
 //     )
 //   }
 // });
-
-ReactDOM.render(
-  routes,
-  document.getElementById('app')
-);
