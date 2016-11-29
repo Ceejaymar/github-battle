@@ -4,7 +4,8 @@ const Router = ReactRouter.Router;
 const Route = ReactRouter.Route;
 const hashHistory = ReactRouter.hashHistory
 const IndexRoute = ReactRouter.IndexRoute;
-const PromptContainer = require('../containers/PromptContainer')
+const PromptContainer = require('../containers/PromptContainer');
+const ConfirmBattleContainer = require('../containers/ConfirmBattleContainer');
 
 const Main = require('../components/Main');
 const Home = require('../components/Home');
@@ -15,6 +16,7 @@ const routes = (
       <IndexRoute component={Home} />
       <Route path="playerOne" header="Player One" component={PromptContainer} />
       <Route path="playerTwo/:playerOne" header="Player Two" component={PromptContainer} />
+      <Route path="battle" component={ConfirmBattleContainer} />
     </Route>
   </Router>
 );
